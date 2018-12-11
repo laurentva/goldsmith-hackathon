@@ -45,8 +45,6 @@ client.username_pw_set(username, password=password)
 
 client.tls_set_context(context=ssl.create_default_context())
 
-client
-
 client.on_connect = on_connect
 
 client.on_message = on_message
