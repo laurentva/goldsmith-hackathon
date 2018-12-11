@@ -23,7 +23,7 @@ def on_message(client, userdata, msg):
     print("Received message")
     tag_data = json.loads(msg.payload.decode())
     print(tag_data)
-    with open("data-log.txt", "w") as file_pointer:
+    with open("data-log.txt", "a") as file_pointer:
         for tag in tag_data:
             try:
                 network_id = tag["tagId"]
